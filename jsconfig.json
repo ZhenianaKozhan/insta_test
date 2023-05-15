@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "target": "ES6",
+    "jsx": "react",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "components/*": ["./components/*"],
+      "pages/*": ["./pages/*"],
+      "common/*": ["./common/*"]
+    }
+  },
+  "include": ["./**/*.js", "./**/*.jsx"],
+  "exclude": ["node_modules", "dist"]
+}

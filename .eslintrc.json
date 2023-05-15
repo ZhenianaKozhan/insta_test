@@ -1,0 +1,114 @@
+{
+  "plugins": ["react", "react-hooks", "import", "simple-import-sort","prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true,
+    "amd": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/require-default-props": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-array-index-key": "warn",
+    "react/no-danger-with-children": "warn",
+    "react/jsx-sort-props": [1, {
+      "callbacksLast": true,
+      "shorthandFirst": true,
+      "multiline": "last"
+    }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "camelcase": "off",
+    "spaced-comment": "error",
+    "no-duplicate-imports": "error",
+    "space-in-parens": "warn",
+    "no-bitwise": "error",
+    "default-case": "error",
+    "guard-for-in": "warn",
+    "import/named": "error",
+    "import/no-unresolved": "warn",
+    "import/no-extraneous-dependencies": "warn",
+    "import/no-named-as-default": "warn",
+    "import/no-cycle": "error",
+    "import/prefer-default-export": "off",
+    "simple-import-sort/imports": "error",
+    "prefer-const": "warn",
+    "no-param-reassign": "warn",
+    "no-restricted-properties": "warn",
+    "no-restricted-syntax": "warn",
+    "array-callback-return": "warn",
+    "no-plusplus": "warn",
+    "consistent-return": "warn",
+    "no-use-before-define": "error",
+    "react/no-unescaped-entities": "error",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/no-noninteractive-element-to-interactive-role": "warn",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-autofocus": "warn",
+    "jsx-a11y/iframe-has-title": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+      "rules": {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              ["^[a-z]"],
+              ["^components?", "components?", "containers?", "^\\.\\.(?!/?$)", "^\\.\\./?$", "^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              ["services?", "utils?", "helpers?", "validations?"],
+              ["hocs","hooks", "components/hocs"],
+              ["serializers?", "normilazers?", "normalizers?"],
+              ["actions?", "reducers?"],
+              ["configs?","constants?"],
+              ["^\\u0000"],
+              ["^.+\\.s?css$"]
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      },
+      "alias": {
+        "map": [
+          ["components", "./src/components"],
+          ["pages", "./src/pages"],
+          ["common", "./src/common"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "globals": {
+    "__IS_DEV__": true
+  }
+}

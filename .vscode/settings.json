@@ -1,0 +1,13 @@
+{
+  "eslint.workingDirectories": [
+    "./src"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+  },
+}
