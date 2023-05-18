@@ -1,0 +1,58 @@
+.loginArticle {
+  margin-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.loginPic {
+  height: 581.15px;
+  width: 380.312px;
+  margin: 0 32px 12px 0;
+  background-image: url('https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk');
+  background-size: 468.32px 634.15px;
+  background-position: -46px 0;
+}
+
+.loginFormContainer {
+  max-width: 350px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginElementContainer {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1px;
+  border: 1px solid rgb(219, 219, 219);
+  flex-grow: 1;
+}
+
+.logoInsta {
+  margin: 36px 0 12px 0;
+  width: 175px;
+  height: 51px;
+  background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png');
+  background-size: auto;
+  background-position: 0px -52px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.loginElementOr {
+}
