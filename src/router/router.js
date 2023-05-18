@@ -1,10 +1,13 @@
+// eslint-disable-next-line import/no-unresolved
 import { Home } from 'pages/index';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export const RootRouter = () => {
   return (
     <BrowserRouter>
-      <Route path='/' component={Home} />
+      <Routes>
+        <Route element={<Home />} path='/' />
+      </Routes>
     </BrowserRouter>
   );
 };

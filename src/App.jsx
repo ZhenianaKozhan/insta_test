@@ -1,9 +1,8 @@
 import { Provider } from 'react-redux';
-import { RootRouter } from 'router/router';
+// eslint-disable-next-line import/no-unresolved
+import { RootRouter } from 'router';
 
-import store from './stores';
-
-import './App.css';
+import store from './redux/store';
 
 export const App = () => {
   return (
