@@ -33,3 +33,7 @@ select {
   color: inherit;
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+}
