@@ -12,8 +12,11 @@ export const LoginForm = () => {
   return (
     <article className='loginArticle'>
       <div className='loginPic'>
-        <div className=''>
-          <img alt='displey phone' src='./public/images/screenshot1.png' />
+        <div className='screenshot'>
+          <div className='element'></div>
+          <div className='element'></div>
+          <div className='element'></div>
+          <div className='element'></div>
         </div>
       </div>
       <div className='loginFormContainer'>
