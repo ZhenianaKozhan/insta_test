@@ -1,0 +1,28 @@
+.footerContainer {
+  margin-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(115, 115, 115);
+}
+
+.footerList {
+  margin-top: 24px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerLink {
+  color: inherit;
+}
+
+.copyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}

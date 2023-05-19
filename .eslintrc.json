@@ -1,5 +1,5 @@
 {
-  "plugins": ["react", "react-hooks", "import", "simple-import-sort","prettier"],
+  "plugins": ["react", "react-hooks", "import", "simple-import-sort", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -30,11 +30,14 @@
     "react/react-in-jsx-scope": "off",
     "react/no-array-index-key": "warn",
     "react/no-danger-with-children": "warn",
-    "react/jsx-sort-props": [1, {
-      "callbacksLast": true,
-      "shorthandFirst": true,
-      "multiline": "last"
-    }],
+    "react/jsx-sort-props": [
+      1,
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "multiline": "last"
+      }
+    ],
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "camelcase": "off",
     "spaced-comment": "error",
@@ -76,12 +79,21 @@
           {
             "groups": [
               ["^[a-z]"],
-              ["^components?", "components?", "containers?", "^\\.\\.(?!/?$)", "^\\.\\./?$", "^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              [
+                "^components?",
+                "components?",
+                "containers?",
+                "^\\.\\.(?!/?$)",
+                "^\\.\\./?$",
+                "^\\./(?=.*/)(?!/?$)",
+                "^\\.(?!/?$)",
+                "^\\./?$"
+              ],
               ["services?", "utils?", "helpers?", "validations?"],
-              ["hocs","hooks", "components/hocs"],
+              ["hocs", "hooks", "components/hocs"],
               ["serializers?", "normilazers?", "normalizers?"],
               ["actions?", "reducers?"],
-              ["configs?","constants?"],
+              ["configs?", "constants?"],
               ["^\\u0000"],
               ["^.+\\.s?css$"]
             ]
@@ -102,7 +114,10 @@
         "map": [
           ["components", "./src/components"],
           ["pages", "./src/pages"],
-          ["common", "./src/common"]
+          ["common", "./src/common"],
+          ["redux", "./src/redux"],
+          ["router", "./src/router"],
+          ["styles", "./src/styles"]
         ],
         "extensions": [".js", ".jsx"]
       }
